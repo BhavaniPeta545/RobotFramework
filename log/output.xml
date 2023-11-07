@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231106 13:56:16.959" rpa="false" schemaversion="4">
+<suite id="s1" name="Windows" source="C:\Users\hp\PycharmProjects\RobotFramework\Robot\Tests\Windows.robot">
+<test id="s1-t1" name="TestAlert" line="20">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231106 13:56:17.421" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<status status="PASS" starttime="20231106 13:56:17.420" endtime="20231106 13:56:22.007"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231106 13:56:22.008" endtime="20231106 13:56:22.362"/>
+</kw>
+<kw name="Alertswindow" library="Functions">
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231106 13:56:32.364" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20231106 13:56:22.363" endtime="20231106 13:56:32.364"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>confirmbtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231106 13:56:32.366" level="INFO">Clicking element 'confirmbtn'.</msg>
+<status status="PASS" starttime="20231106 13:56:32.365" endtime="20231106 13:56:32.445"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<arg>Hello , Are you sure you want to confirm?</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20231106 13:56:32.446" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20231106 13:56:32.446" endtime="20231106 13:56:32.453"/>
+</kw>
+<status status="PASS" starttime="20231106 13:56:22.363" endtime="20231106 13:56:32.453"/>
+</kw>
+<status status="PASS" starttime="20231106 13:56:17.419" endtime="20231106 13:56:32.453"/>
+</test>
+<status status="PASS" starttime="20231106 13:56:16.963" endtime="20231106 13:56:32.454"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Windows">Windows</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
